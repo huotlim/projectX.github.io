@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Mini Finance - Wallet Page</title>
+
+        <!-- CSS FILES -->      
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/apexcharts.css" rel="stylesheet">
+
+        <link href="css/tooplate-mini-finance.css" rel="stylesheet">
+
+    </head>
+    
+    <body>
+        <header class="navbar sticky-top flex-md-nowrap">
+            <div class="col-md-3 col-lg-3 me-0 px-3 fs-6">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi-box"></i>
+                    Mini Finance
+                </a>
+            </div>
+
+            <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <form class="custom-form header-form ms-lg-3 ms-md-3 me-lg-auto me-md-auto order-2 order-lg-0 order-md-0" action="#" method="get" role="form">
+                <input class="form-control" name="search" type="text" placeholder="Search" aria-label="Search">
+            </form>
+
+            <div class="navbar-nav me-lg-2">
+                <div class="nav-item text-nowrap d-flex align-items-center">
+                    <div class="dropdown ps-3">
+                        <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi-bell"></i>
+                            <span class="position-absolute start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                        </a>
+
+                        <ul class="dropdown-menu notifications-block-wrap bg-white shadow">
+                            <small>Notifications</small>
+
+                            <li class="notifications-block border-bottom pb-2 mb-2">
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="notifications-icon-wrap bg-success">
+                                        <i class="notifications-icon bi-check-circle-fill"></i>
+                                    </div>
+
+                                    <div>
+                                        <span>Your account has been created successfuly.</span>
+
+                                        <p>12 days ago</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="notifications-block border-bottom pb-2 mb-2">
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="notifications-icon-wrap bg-info">
+                                        <i class="notifications-icon bi-folder"></i>
+                                    </div>
+
+                                    <div>
+                                        <span>Please check. We have sent a Daily report.</span>
+
+                                        <p>10 days ago</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="notifications-block">
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="notifications-icon-wrap bg-danger">
+                                        <i class="notifications-icon bi-question-circle"></i>
+                                    </div>
+
+                                    <div>
+                                        <span>Account verification failed.</span>
+
+                                        <p>1 hour ago</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown ps-1">
+                        <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi-three-dots-vertical"></i>
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-social bg-white shadow">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-4">
+                                        <a class="dropdown-item text-center" href="#">
+                                            <img src="images/social/search.png" class="profile-image img-fluid" alt="">
+                                            <span class="d-block">Google</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-4">
+                                        <a class="dropdown-item text-center" href="#">
+                                            <img src="images/social/spotify.png" class="profile-image img-fluid" alt="">
+                                            <span class="d-block">Spotify</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-4">
+                                        <a class="dropdown-item text-center" href="#">
+                                            <img src="images/social/telegram.png" class="profile-image img-fluid" alt="">
+                                            <span class="d-block">Telegram</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-4">
+                                        <a class="dropdown-item text-center" href="#">
+                                            <img src="images/social/snapchat.png" class="profile-image img-fluid" alt="">
+                                            <span class="d-block">Snapchat</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-4">
+                                        <a class="dropdown-item text-center" href="#">
+                                            <img src="images/social/tiktok.png" class="profile-image img-fluid" alt="">
+                                            <span class="d-block">Tiktok</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-4">
+                                        <a class="dropdown-item text-center" href="#">
+                                            <img src="images/social/youtube.png" class="profile-image img-fluid" alt="">
+                                            <span class="d-block">Youtube</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown px-3">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="images/profile/photo_2023-11-01_15-29-57.jpg" class="profile-image img-fluid" alt="">
+                        </a>
+                        <ul class="dropdown-menu bg-white shadow">
+                            <li>
+                                <div class="dropdown-menu-profile-thumb d-flex">
+                                    <img src="images/profile/photo_2023-11-01_15-29-57.jpg" class="profile-image img-fluid me-3" alt="">
+
+                                    <div class="d-flex flex-column">
+                                        <small>Lim huot</small>
+                                        <a href="#">Limhuot@gmail.com</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="profile.html">
+                                    <i class="bi-person me-2"></i>
+                                    Profile
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="setting.html">
+                                    <i class="bi-gear me-2"></i>
+                                    Settings
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="help-center.html">
+                                    <i class="bi-question-circle me-2"></i>
+                                    Help
+                                </a>
+                            </li>
+
+                            <li class="border-top mt-3 pt-2 mx-4">
+                                <a class="dropdown-item ms-0 me-0" href="#">
+                                    <i class="bi-box-arrow-left me-2"></i>
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row">
+                <nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block sidebar collapse">
+                    <div class="position-sticky py-4 px-3 sidebar-sticky">
+                        <ul class="nav flex-column h-100">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">
+                                    <i class="bi-house-fill me-2"></i>
+                                    Overview
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="wallet.html">
+                                    <i class="bi-wallet me-2"></i>
+                                    My Wallet
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="profile.html">
+                                    <i class="bi-person me-2"></i>
+                                    Profile
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="setting.html">
+                                    <i class="bi-gear me-2"></i>
+                                    Settings
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="help-center.html">
+                                    <i class="bi-question-circle me-2"></i>
+                                    Help Center
+                                </a>
+                            </li>
+
+                            <li class="nav-item featured-box mt-lg-5 mt-4 mb-4">
+                                <img src="images/credit-card.png" class="img-fluid" alt="">
+
+                                <a class="btn custom-btn" href="#">Upgrade</a>
+                            </li>
+
+                            <li class="nav-item border-top mt-auto pt-2">
+                                <a class="nav-link" href="#">
+                                    <i class="bi-box-arrow-left me-2"></i>
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <main class="main-wrapper col-md-9 ms-sm-auto py-4 col-lg-9 px-md-4 border-start">
+                    <div class="title-group mb-3">
+                        <h1 class="h2 mb-0">Wallet</h1>
+                    </div>
+
+                    <div class="row my-4">
+                        <div class="col-lg-12 col-12">
+                            <div class="custom-block bg-white">
+                                <h5 class="mb-4">Account Activities</h5>
+
+                                <div class="table-responsive">
+                                    <table class="account-table table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Date</th>
+
+                                                <th scope="col">Time</th>
+
+                                                <th scope="col">Description</th>
+
+                                                <th scope="col">Payment Type</th>
+
+                                                <th scope="col">Amount</th>
+
+                                                <th scope="col">Balance</th>
+
+                                                <th scope="col">Status</th>
+
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">July 5, 2023</td>
+
+                                                <td scope="row">10:00 PM</td>
+
+                                                <td scope="row">Shopping</td>
+
+                                                <td scope="row">C2C Transfer</td>
+
+                                                <td class="text-danger" scope="row">
+                                                    <span class="me-1">-</span>
+                                                    $100.00
+                                                </td>
+
+                                                <td scope="row">$5,500.00</td>
+
+                                                <td scope="row">
+                                                    <span class="badge text-bg-danger">
+                                                        Pending
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">July 2, 2023</td>
+
+                                                <td scope="row">10:42 AM</td>
+
+                                                <td scope="row">Food Delivery</td>
+
+                                                <td scope="row">Mobile Reload</td>
+
+                                                <td class="text-success" scope="row">
+                                                    <span class="me-1">+</span>
+                                                    $250
+                                                </td>
+
+                                                <td scope="row">$5,600.00</td>
+
+                                                <td scope="row">
+                                                    <span class="badge text-bg-success">
+                                                        Success
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">June 28, 2023</td>
+
+                                                <td scope="row">8:20 PM</td>
+
+                                                <td scope="row">Billing</td>
+
+                                                <td scope="row">Goverment</td>
+
+                                                <td class="text-success" scope="row">
+                                                <span class="me-2">+</span>$50</td>
+
+                                                <td scope="row">$5,350.00</td>
+
+                                                <td scope="row">
+                                                    <span class="badge text-bg-success">
+                                                        Success
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">June 24, 2023</td>
+
+                                                <td scope="row">10:48 PM</td>
+
+                                                <td scope="row">Shopee</td>
+
+                                                <td scope="row">QR Code</td>
+
+                                                <td class="text-danger" scope="row">
+                                                <span class="me-2">-</span>$380</td>
+
+                                                <td scope="row">$5,300.00</td>
+
+                                                <td scope="row">
+                                                    <span class="badge text-bg-dark">
+                                                        Cancelled
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">June 12, 2023</td>
+
+                                                <td scope="row">12:30 AM</td>
+
+                                                <td scope="row">Food Delivery</td>
+
+                                                <td scope="row">Mobile Reload</td>
+
+                                                <td class="text-success" scope="row">
+                                                <span class="me-2">+</span>$250</td>
+
+                                                <td scope="row">$4,920.00</td>
+
+                                                <td scope="row">
+                                                    <span class="badge text-bg-success">
+                                                        Success
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">May 31, 2023</td>
+
+                                                <td scope="row">2:40 PM</td>
+
+                                                <td scope="row">Food Delivery</td>
+
+                                                <td scope="row">Mobile Reload</td>
+
+                                                <td class="text-success" scope="row">
+                                                <span class="me-2">+</span>$50</td>
+
+                                                <td scope="row">$4,920.00</td>
+
+                                                <td scope="row">
+                                                    <span class="badge text-bg-success">
+                                                        Success
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">May 22, 2023</td>
+
+                                                <td scope="row">8:50 AM</td>
+
+                                                <td scope="row">Food Delivery</td>
+
+                                                <td scope="row">Mobile Reload</td>
+
+                                                <td class="text-success" scope="row">
+                                                <span class="me-2">+</span>$50</td>
+
+                                                <td scope="row">$4,920.00</td>
+
+                                                <td scope="row">
+                                                    <span class="badge text-bg-success">
+                                                        Success
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">May 20, 2023</td>
+
+                                                <td scope="row">6:45 PM</td>
+
+                                                <td scope="row">Food Delivery</td>
+
+                                                <td scope="row">Mobile Reload</td>
+
+                                                <td class="text-danger" scope="row">
+                                                <span class="me-2">-</span>$500</td>
+
+                                                <td scope="row">$4,920.00</td>
+
+                                                <td scope="row">
+                                                    <span class="badge text-bg-danger">
+                                                        Pending
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">April 28, 2023</td>
+
+                                                <td scope="row">11:20 AM</td>
+
+                                                <td scope="row">Food Delivery</td>
+
+                                                <td scope="row">Mobile Reload</td>
+
+                                                <td class="text-success" scope="row">
+                                                <span class="me-2">+</span>$856</td>
+
+                                                <td scope="row">$4,920.00</td>
+
+                                                <td scope="row">
+                                                    <span class="badge text-bg-success">
+                                                        Success
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">April 16, 2023</td>
+
+                                                <td scope="row">11:00 PM</td>
+
+                                                <td scope="row">Food Delivery</td>
+
+                                                <td scope="row">Mobile Reload</td>
+
+                                                <td class="text-success" scope="row">
+                                                <span class="me-2">+</span>$50</td>
+
+                                                <td scope="row">$4,920.00</td>
+
+                                                <td scope="row">
+                                                    <span class="badge text-bg-danger">
+                                                        Pending
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <nav aria-label="Page navigation example">
+                                        <ul class="pagination justify-content-center mb-0">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">Prev</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="page-item active" aria-current="page">
+                                                <a class="page-link" href="#">1</a>
+                                            </li>
+                                            
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">2</a>
+                                            </li>
+                                            
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">3</a>
+                                            </li>
+
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">4</a>
+                                            </li>
+                                            
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">Next</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7 col-12">
+                            <div class="custom-block custom-block-balance">
+                                <small>Your Balance</small>
+
+                                <h2 class="mt-2 mb-3">$254,800</h2>
+
+                                <div class="custom-block-numbers d-flex align-items-center">
+                                    <span>****</span>
+                                    <span>****</span>
+                                    <span>****</span>
+                                    <p>2560</p>
+                                </div>
+
+                                <div class="d-flex">
+                                    <div>
+                                        <small>Valid Date</small>
+                                        <p>12/2028</p>
+                                    </div>
+
+                                    <div class="ms-auto">
+                                        <small>Card Holder</small>
+                                        <p>Lim Huot</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-block custom-block-bottom d-flex flex-wrap">
+                                <div class="custom-block-bottom-item">
+                                    <a href="#" class="d-flex flex-column">
+                                        <i class="custom-block-icon bi-wallet"></i>
+
+                                        <small>Top up</small>
+                                    </a>
+                                </div>
+
+                                <div class="custom-block-bottom-item">
+                                    <a href="#" class="d-flex flex-column">
+                                        <i class="custom-block-icon bi-upc-scan"></i>
+
+                                        <small>Scan & Pay</small>
+                                    </a>
+                                </div>
+
+                                <div class="custom-block-bottom-item">
+                                    <a href="#" class="d-flex flex-column">
+                                        <i class="custom-block-icon bi-send"></i>
+
+                                        <small>Send</small>
+                                    </a>
+                                </div>
+
+                                <div class="custom-block-bottom-item">
+                                    <a href="#" class="d-flex flex-column">
+                                        <i class="custom-block-icon bi-arrow-down"></i>
+
+                                        <small>Request</small>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-12">
+                            <div class="custom-block custom-block-transations">
+                                <h5 class="mb-4">Recent Transations</h5>
+
+                                <div class="d-flex flex-wrap align-items-center mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://yt3.googleusercontent.com/jl5DsSBU55VDwz2tblaMqSTNIdY4v_bp2i376mzeVE2-A4w55YTulim6rvWs-SvW4hVibn_YSQ=s900-c-k-c0x00ffffff-no-rj" class="profile-image img-fluid" alt="">
+
+                                        <div>
+                                            <p>
+                                                <a href="transation-detail.html">Try Dana</a>
+                                            </p>
+
+                                            <small class="text-muted">C2C Transfer</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="ms-auto">
+                                        <small>05/12/2023</small>
+                                        <strong class="d-block text-danger"><span class="me-1">-</span> $250</strong>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img src="data:image/jpeg;base64,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" class="profile-image img-fluid" alt="">
+
+                                        <div>
+                                            <p>
+                                                <a href="transation-detail.html">Khemak Sereymun</a>
+                                            </p>
+
+                                            <small class="text-muted">Mobile Reload</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="ms-auto">
+                                        <small>22/8/2023</small>
+                                        <strong class="d-block text-success"><span class="me-1">+</span> $280</strong>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://i0.wp.com/axeanfestival.com/wp-content/uploads/2021/07/vann-da-square.jpg?resize=500%2C423&ssl=1" class="profile-image img-fluid" alt="">
+
+                                        <div>
+                                            <p><a href="transation-detail.html">Marn Vannda</a></p>
+
+                                            <small class="text-muted">Payment Received</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="ms-auto">
+                                        <small>22/8/2023</small>
+                                        <strong class="d-block text-success"><span class="me-1">+</span> $280</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <footer class="site-footer">
+                        <div class="container">
+                            <div class="row">
+                                
+                              
+                            </div>
+                        </div>
+                    </footer>
+                </main>
+
+            </div>
+        </div>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/apexcharts.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>
